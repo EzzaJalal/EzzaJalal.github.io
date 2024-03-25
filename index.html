@@ -3,13 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <title>First Digi-Intro</title>
-    
 </head>
+    <script>
+        
+.first { grid-area: header; }
+.second { grid-area: nav; }
+.third { grid-area: main; }
+.fourth { grid-area: aside; }
+.fifth { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'nav main main main aside aside'
+    'nav footer footer footer footer footer';
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container > header, nav, main, aside, footer {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.second{
+    display: grid;
+    padding: 2px 6px;
+}
+    </script>
 
 <body>
   <h1>Ezza Jalal</h1>
+  <nav class="second">
+    <a href="index.html">HOME</a>
+    <a href="Page One.html">HUMAN BODY</a>
+    <a href="Basic Grid.html">BODY MYSTERY</a>
+  </nav>
   <p>Welcome to my website!</p>
   <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+
+
+     <div class="grid-container">
+        
+          <header class="first">
+             <h1>Human Body</h1>
+          </header>
+            <nav class="second">
+               <a href="index.html">HOME</a>
+               <a href="Page One.html">HUMAN BODY</a>
+               <a href="Basic Grid.html">BODY MYSTERY</a>
+            </nav>
+
+    <main class="third">
+         <p>Many aspects of our world, from the body mass of creatures in the animal kingdom to the population of cities across the globe, follow an intriguing mathematical pattern. 
+            Known as Zipf's law, the rule says that when something's size is doubled, that thing becomes about half as common. 
+            Researchers wondered whether the law extended to the human body. 
+            Ecologist Ian A. Hatton of McGill University, independent researcher Jeffery A. 
+            Shander and their colleagues amassed data about the volume and frequency of human cells and looked for the pattern.
+            It turns out that it holds.</p>
+    </main>   
+    <aside class="fourth">
+        <figure>
+            <img src="Body Pics/Cells.jpg" alt="Human Body"/>
+            <figcaption>Fig.2 - Human Cells - Adobe Stock.</figcaption>
+        </figure>
+        <p>Human body is very complicated kind of mystery or maze where you try to resolve issues but you can't resolve enough.
+           So, you get lost in finding solutions of problems in the complex matter of body. Like you are finding one solution for 
+           one issue but at the same time new problems are arising. You are diagnosing one disease but new advance disease with no treatment
+           is emerging. So, the medical field is a huge unsolved mystery or puzzle in its own.  
+        </p>
+    </aside>
+
+    <footer class="fifth">
+        <P>Author: ABC Team - <a href="mailto:abc@example.com">abc@example.com</a><br>
+        Contact number: <a href="tel: +358 786011111">+358-786011111</a>
+        </P>
+    </footer>
+     </div>
+
+
+     <div class="grid-container">
+    <header class="first">
+        <h1>Medical Mystery</h1>
+    </header>
+    <nav class = "second">
+        <a href="index.html">HOME</a>
+        <a href="Page One.html">HUMAN BODY</a>
+        <a href="Basic Grid.html">BODY MYSTERY</a>
+    </nav>  
+    <main class="third">
+        <p>The human body is a complex, highly organized structure made up of unique cells that work together to accomplish the specific functions necessary for sustaining life, to tissues and organs. 
+           The cells in a tissue are not identical, but they work together to accomplish specific functions.
+           There is no doubt about it, the human body is complex, perhaps the most complex machine on earth. 
+           This is why body donation is crucial to the practice of medicine.
+           It is critical for surgeons to educate themselves and to be well practiced on all surgical procedures, both complicated and routine.</p>
+        </main>
+    <figure>
+        <img src="Body Pics/Humanbody.jpg" alt="Human Body"/>
+        <figcaption>Fig.1 - Healthy Human Body Cells - Adobe Stock.</figcaption>
+    </figure>
+</div>
 </body>
 
 </html>
