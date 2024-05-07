@@ -1,50 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Agency Website Design - End Project</title>
-    <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel Agency Website Design - End Project</title>
+        <link rel="stylesheet" href="style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
- </head>
-<body>
-    <div class="kabsa1">
-        
-        <nav>
-           <img class="logo" src="Images/HaagaHelia-logo.jpg" alt="Logo" width="60" height="60">
-           <div class="nav-links">
-          <i class="fa fa-times" aria-hidden="true"></i>
-              <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="places.html">PLACES</a></li>
-                <li><a href="foods.html">FOODS</a></li>
-                <li><a href="festivals.html">FESTIVALS</a></li>
-                <li><a href="contact.html">CONTACTS</a></li>
-              </ul>
-           </div>
-           <i class="fa fa-bars" aria-hidden="true"></i>
-        </nav>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
 
-    <article class="about-food">
-        <h2 class="heading">Kabsa</h2>
-        <img class="food-pic" src="Images/Kabsa1.jpg" alt="Arabic Food">
+        <div class="kabsa1">
+            <!--navbar and logo for mobiles and desktops-->
+            <nav>
+                <img class="logo" src="Images/HaagaHelia-logo.jpg" alt="Logo" width="60" height="60">
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="places.html">PLACES</a></li>
+                        <li><a href="foods.html">FOODS</a></li>
+                        <li><a href="festivals.html">FESTIVALS</a></li>
+                        <li><a href="contact.html">CONTACTS</a></li>
+                    </ul>
+                </div>
+                    <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <!--little Javascript for mobile toggle menu-->
+            <script src="script.js"></script>
+
+            <!--Following is kind of article for Kabsa only with Kabsa image-->
+            <article class="about-food">
+                <h2 class="heading">Kabsa</h2>
+                <img class="food-pic" src="Images/Kabsa1.jpg" alt="Arabic Food">
         
-        <div class="about-food">
-            <p>Kabsa is a traditional Saudi Arabian dish that holds a place of honor in Middle Eastern cuisine, revered for its aromatic spices and robust flavors. 
-               Originating from the Arabian Peninsula, Kabsa is a hearty rice dish typically made with long-grain Basmati rice, tender meat—often chicken, lamb, or goat—and a medley of spices that lend it a distinctive taste and aroma. 
-               What sets Kabsa apart is its fragrant spice blend, which typically includes cardamom, cinnamon, cloves, black lime, bay leaves, and nutmeg, among others.
-               The preparation of Kabsa often involves slow-cooking the meat with the spices until it becomes tender and infused with the rich flavors of the spices.</p> 
-               <p>The rice is then cooked separately and flavored with the same spice mixture, allowing it to absorb the essence of the meat and spices. 
-               Once cooked, the rice is layered with the meat and served with a garnish of toasted almonds, pine nuts, and fresh herbs, such as parsley or cilantro. 
-               Kabsa is typically enjoyed with a side of tangy tomato salsa, known as "dakous," which adds a refreshing contrast to the richness of the dish.</p>
-            </div>
-            <p><a class="food-back-btn" href="index.html">Back to Home</a></p>      
-        </article>
-    </div>
-        </body>
+                <div class="about-food">
+                    <p class="food-text">Kabsa is a traditional Saudi Arabian dish that holds a place of honor in Middle Eastern cuisine, revered for its aromatic spices and robust flavors. 
+                        Originating from the Arabian Peninsula, Kabsa is a hearty rice dish typically made with long-grain Basmati rice, tender meat—often chicken, lamb, or goat—and a medley of spices that lend it a distinctive taste and aroma. 
+                        What sets Kabsa apart is its fragrant spice blend, which typically includes cardamom, cinnamon, cloves, black lime, bay leaves, and nutmeg, among others.
+                        The preparation of Kabsa often involves slow-cooking the meat with the spices until it becomes tender and infused with the rich flavors of the spices.
+                        <br>
+                        <br>
+                        The rice is then cooked separately and flavored with the same spice mixture, allowing it to absorb the essence of the meat and spices. 
+                        Once cooked, the rice is layered with the meat and served with a garnish of toasted almonds, pine nuts, and fresh herbs, such as parsley or cilantro. 
+                        Kabsa is typically enjoyed with a side of tangy tomato salsa, known as "dakous," which adds a refreshing contrast to the richness of the dish.
+                    </p>
+                </div>
+                    <p><a class="food-back-btn" href="index.html">Back to Home</a></p>      
+            </article>
+        </div>
+
+    </body>
 </html>

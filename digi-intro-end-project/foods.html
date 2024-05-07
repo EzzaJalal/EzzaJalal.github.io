@@ -1,80 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Agency Website Design - End Project</title>
-    <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel Agency Website Design - End Project</title>
+        <link rel="stylesheet" href="style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav>
-        <img class="logo" src="Images/HaagaHelia-logo.jpg" alt="Logo" width="60" height="60">
-      
-        <div class="nav-links">
-              <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="places.html">PLACES</a></li>
-                <li><a href="foods.html">FOODS</a></li>
-                <li><a href="festivals.html">FESTIVALS</a></li>
-                <li><a href="contact.html">CONTACTS</a></li>
-              </ul>
-        </div>
-     </nav>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!--navbar and logo for mobiles and desktops-->
+        <nav>
+            <img class="logo" src="Images/HaagaHelia-logo.jpg" alt="Logo" width="60" height="60">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="places.html">PLACES</a></li>
+                    <li><a href="foods.html">FOODS</a></li>
+                    <li><a href="festivals.html">FESTIVALS</a></li>
+                    <li><a href="contact.html">CONTACTS</a></li>
+                </ul>
+            </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <!--little Javascript for mobile toggle menu-->
+        <script src="script.js"></script>
 
-    <main class="foods">
-        <h2 class="main">Foods</h2>
-        <p>We have visited many countries so we also taste their variety of foods.
-           Delve into a world of culinary delights with an array of delicious foods that tantalize the taste buds. 
-           From savory street food to decadent desserts, the options are endless. 
-           Whether you're craving comfort food or exotic delicacies, there's something to satisfy every palate. 
-           Embark on a gastronomic adventure and discover the diverse and delectable flavors that make food an irresistible pleasure. 
-           Here, we are going to mention some of the mouth-watering various dishes from various countries.</p>
+        <!--It is about some famous delicious foods of various countries-->
 
-        <section class="different-foods">
-        <div class="all-food-info">
-        <img class="food-pics" src="Images/Lohikeitto.png" alt="Finnish Food">
-        <h3>Lohikeitto</h3>
-        <p>Lohikeitto, or Finnish salmon soup, is a beloved dish that showcases the rich flavors of Finland's freshwater bounty. 
-           The soup typically begins with a base of fish stock or water, infused with the natural essence of salmon bones and aromatics like onions, carrots, and celery. 
-           The star ingredient, fresh salmon, is then added to the broth in generous chunks, allowing its delicate flavor to meld with the other ingredients. 
-           One of the defining characteristics of Lohikeitto is its creamy consistency. 
-           This not only enhances the richness of the broth but also creates a luscious texture that coats the palate with each spoonful. </p>
-        </div>
-        <div class="all-food-info">
-        <img class="food-pics" src="Images/Biryani.jpg" alt="Pakistani Food">
-        <h3>Biryani</h3>
-        <p>Pakistani Biryani is a flavorful and aromatic rice dish that is beloved across the country for its rich taste and diverse spices. 
-           Made with fragrant basmati rice, tender marinated meat (usually chicken, beef, or goat), and a blend of spices such as cumin, coriander, cloves, cinnamon, and cardamom, Pakistani Biryani offers a symphony of flavors in every bite. 
-           Additionally, it often includes yogurt, fried onions, and saffron-infused milk, which add layers of complexity and depth to the dish. 
-           Pakistani Biryani is a true culinary masterpiece that reflects the cultural richness and diversity of Pakistan's cuisine.</p>
-        </div>
-        <div class="all-food-info">
-        <img class="food-pics" src="Images/Kabsa.jpg" alt="Arabic Food">
-        <h3>Kabsa</h3>
-        <p>Arabic Kabsa is a traditional Middle Eastern rice dish renowned for its rich flavors and aromatic spices. 
-           Typically prepared with long-grain rice, tender meat (commonly chicken, lamb, or goat), and an array of vegetables, Kabsa offers a delightful culinary experience. 
-           Its distinctive blend of spices, including cloves, cardamom, cinnamon, and black lime, lends the dish its unique taste and aroma. 
-           Often served during festive occasions and gatherings, Arabic Kabsa brings families and friends together to savor its hearty and comforting goodness. 
-           With its cultural significance and delicious appeal, Kabsa remains a cherished favorite in Arab cuisine</p>
-        </div>
-        </section>
-    </main>
-<hr>
-<footer>
-    <p>
-    Email: <a href="mailto:HHTA-Pasila@yahoo.com">HHTA-Pasila@yahoo.com</a>
-    <br>
-    <br>
-    Contact number: <a href="tel:+358-786011111">+358-786011111</a> 
-    <br>
-    <br>
-    Haaga-Helia Travel Agency  &#169;  1988. All Rights Reserved.
-    </p>
-</footer>
-</body>
+        <main class="foods">
+            <h2>Foods</h2>
+            <p>We have visited many countries so we also taste their variety of foods.
+                Delve into a world of culinary delights with an array of delicious foods that tantalize the taste buds. 
+                From savory street food to decadent desserts, the options are endless. 
+                Whether you're craving comfort food or exotic delicacies, there's something to satisfy every palate. 
+                Embark on a gastronomic adventure and discover the diverse and delectable flavors that make food an irresistible pleasure. 
+                Here, we are going to mention some of the mouth-watering various dishes from various countries.
+            </p>
+
+            <div class="different-foods">
+                <section class="all-food-info">
+                    <img class="food-pics" src="Images/Lohikeitto.png" alt="Finnish Food">
+                    <h3>Lohikeitto</h3>
+                    <p>Lohikeitto, or Finnish salmon soup, is a beloved dish that showcases the rich flavors of Finland's freshwater bounty. 
+                        The soup typically begins with a base of fish stock or water, infused with the natural essence of salmon bones and aromatics like onions, carrots, and celery. 
+                        The star ingredient, fresh salmon, is then added to the broth in generous chunks, allowing its delicate flavor to meld with the other ingredients. 
+                    </p>
+                </section>
+
+                <section class="all-food-info">
+                    <img class="food-pics" src="Images/Biryani.jpg" alt="Pakistani Food">
+                    <h3>Biryani</h3>
+                    <p>Pakistani Biryani is a flavorful and aromatic rice dish that is beloved across the country for its rich taste and diverse spices. 
+                        Made with fragrant basmati rice, tender marinated meat (usually chicken, beef, or goat), and a blend of spices such as cumin, coriander, cloves, cinnamon, and cardamom. 
+                        Additionally, it often includes yogurt, fried onions, and saffron-infused milk, which add layers of complexity and depth to the dish. 
+                    </p>
+                </section>
+
+                <section class="all-food-info">
+                    <img class="food-pics" src="Images/Kabsa.jpg" alt="Arabic Food">
+                    <h3>Kabsa</h3>
+                    <p>Arabic Kabsa is a traditional Middle Eastern rice dish renowned for its rich flavors and aromatic spices. 
+                        Typically prepared with long-grain rice, tender meat (commonly chicken, lamb, or goat), and an array of vegetables, Kabsa offers a delightful culinary experience. 
+                        Its distinctive blend of spices, including cloves, cardamom, cinnamon, and black lime, lends the dish its unique taste and aroma. 
+                        Arabic Kabsa brings families and friends together to savor its hearty and comforting goodness. 
+                    </p>
+                </section>
+            </div>
+        </main>
+
+        <hr>
+                    
+        <footer>
+            <p>Email: <a href="mailto:HHTA-Pasila@yahoo.com">HHTA-Pasila@yahoo.com</a>
+                <br>
+                <br>
+                Contact number: <a href="tel:+358-786011111">+358-786011111</a> 
+                <br>
+                <br>
+                Haaga-Helia Travel Agency  &#169;  1988. All Rights Reserved.
+            </p>
+        </footer>
+
+    </body>
 </html>
