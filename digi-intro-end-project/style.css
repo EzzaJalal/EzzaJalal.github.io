@@ -517,15 +517,17 @@ nav .fa{
         margin-bottom: 5%;
     }
 
-    .text{
-        margin-top: 5%;
-        margin-bottom: 5%;
-        text-align: center;
+    .places, .foods{
+        padding: 12px;
     }
-
+    
     .festivals-text, .food-text{
         text-align: center;
         margin-top: 70%;
+    }
+
+    .p{
+        padding: 3px;
     }
     
     h2{
@@ -552,6 +554,11 @@ nav .fa{
         text-align: center;
     }
 
+    .food-back-btn{
+        bottom: 2px;
+        padding: 4px;
+    }
+
     .last-pic-1{
         width: 100%;
         height: auto;
@@ -561,7 +568,7 @@ nav .fa{
         width: 40%;
         height: auto;
     }
-
+   
 }
 
 
