@@ -533,7 +533,7 @@ nav .fa{
     }
 
     .places, .heading, .foods, .last-heading{
-        width: 60%;
+        width: 100%;
         padding: 12px;
     }
     
