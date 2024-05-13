@@ -497,7 +497,7 @@ nav .fa{
     
     .nav-links ul a{
         font-size: 30px !important;
-        line-height: 80px !important;
+        line-height: 60px !important;
     }
 
     .main-btn {
@@ -533,7 +533,7 @@ nav .fa{
     }
 
     .places, .heading, .foods, .last-heading{
-        width: 90%;
+        width: 70%;
     }
     
     .festivals-text, .food-text{
