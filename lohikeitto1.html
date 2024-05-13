@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel Agency Website Design - End Project</title>
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <div class="lohikeitto1">
+            <!--navbar and logo for mobiles and desktops-->
+            <nav>
+                <img class="logo" src="Images/HaagaHelia-logo.jpg" alt="Logo" width="60" height="60">
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="places.html">PLACES</a></li>
+                        <li><a href="foods.html">FOODS</a></li>
+                        <li><a href="festivals.html">FESTIVALS</a></li>
+                        <li><a href="contact.html">CONTACTS</a></li>
+                    </ul>
+                </div>
+                    <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <!--little Javascript for mobile toggle menu-->
+            <script src="script.js"></script>
+            
+            <!--Following is kind of article for Lohikeitto only with Lohikeitto image-->
+            <article class="about-food">
+                <h2 class="heading">Lohikeitto</h2>
+                <img class="food-pic" src="Images/Lohikeitto1.jpg" alt="Finnish Food">
+        
+                <div class="about-food">
+                    <p class="food-text">Lohikeitto, a beloved Finnish dish, embodies the essence of Nordic comfort food with its rich and creamy salmon soup. 
+                        The recipe typically starts with chunks of fresh salmon simmered gently in a broth alongside tender potatoes, leeks, and carrots, creating a harmonious blend of flavors and textures. 
+                        Fragrant dill adds a distinctive herbal note to the soup, while a generous splash of cream or milk lends a velvety richness that coats the palate with each spoonful. 
+                        This hearty concoction is a staple on Finnish dinner tables, especially during the chilly winter months, offering warmth and nourishment to those seeking solace from the cold.
+                        <br>
+                        <br>
+                        Served piping hot and garnished with a sprinkle of fresh dill, Lohikeitto is often accompanied by slices of hearty rye bread or crispbread, providing the perfect complement to its savory goodness. 
+                        Whether enjoyed as a comforting family meal or shared among friends during festive gatherings, Lohikeitto captures the essence of Finnish hospitality, inviting all who partake to experience the warmth and camaraderie of Nordic cuisine.
+                    </p>
+                </div>
+                    <p><a class="food-back-btn" href="index.html">Back to Home</a></p>      
+            </article>
+        </div>
+
+    </body>
+</html>
