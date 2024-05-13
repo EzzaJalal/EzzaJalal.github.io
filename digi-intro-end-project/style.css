@@ -485,8 +485,19 @@ nav .fa{
         cursor: pointer;
     }
 
+    nav .fa-times {
+        margin-bottom: 50px;
+        }
+
     .nav-links ul{
-        padding: 30px;
+        padding: 70px;
+        vertical-align: middle;
+        padding-top: 40%;
+    }
+    
+    .nav-links ul a{
+        font-size: 40px !important;
+        line-height: 100px !important;
     }
 
     .main-btn {
@@ -519,6 +530,10 @@ nav .fa{
 
     .places, .foods{
         padding: 12px;
+    }
+
+    .places, .heading, .foods, .last-heading{
+        width: 90%;
     }
     
     .festivals-text, .food-text{
@@ -568,7 +583,7 @@ nav .fa{
         width: 40%;
         height: auto;
     }
-   
+  
 }
 
 
