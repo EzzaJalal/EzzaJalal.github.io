@@ -528,11 +528,12 @@ nav .fa{
         margin-bottom: 5%;
     }
 
-    .places, .foods{
-        padding: 12px;
+    .places, .foods, .heading{
+        padding: 35px;
+        width: 100%;
     }
 
-    .places, .heading, .foods, .last-heading{
+    .last-heading{
         width: 90%;
         padding: 20px;
     }
